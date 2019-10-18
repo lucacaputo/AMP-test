@@ -1,0 +1,168 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- carousel component -->
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <title>D@M - AMP</title>
+    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+      * {
+        font-family: 'Open Sans', Helvetica, sans-serif;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        min-height: 100%;
+      }
+      html {
+        height: 100%;
+      }
+      .header {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 0;
+      }
+      .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        padding: 15px;
+        border-radius: 60px;
+        box-shadow: 0 0 3px #000;
+        background-color: rgba(0,0,0,0.7);
+        font-size: 25px;
+        color: #eee;
+        min-width: 200px;
+        text-align: center;
+      }
+      .section_intro {
+        text-align: center;
+      }
+      .fixed_cnt {
+        height: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">An AMP App!</h1>
+      <amp-img
+        src="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1346&q=80"
+        alt="header image"
+        height="300"
+        width="400"
+        layout="responsive"
+      >
+      </amp-img>
+    </header>
+    <section class="half">
+      <h3 class="section_intro">A carousel</h3>
+      <amp-carousel
+        height="350"
+        layout="fixed-height"
+        type="carousel"
+        controls
+      >
+        <div class="slide">
+          <amp-img
+            src="https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            width="300"
+            height="350"
+          >
+          </amp-img>
+        </div>
+        <div class="slide">
+          <amp-img
+            src="https://images.unsplash.com/photo-1527769929977-c341ee9f2033?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            width="300"
+            height="350"
+          >
+          </amp-img>
+        </div>
+        <div class="slide">
+          <amp-img
+            src="https://images.unsplash.com/photo-1514580426463-fd77dc4d0672?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=630&q=80"
+            width="300"
+            height="350"
+          >
+          </amp-img>
+        </div>
+        <div class="slide">
+          <amp-img
+            src="https://images.unsplash.com/photo-1501681506726-610246d81ade?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            width="300"
+            height="350"
+          >
+          </amp-img>
+        </div>
+        <div class="slide">
+          <amp-img
+            src="https://images.unsplash.com/photo-1515573998019-c132a6782768?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+            width="300"
+            height="350"
+          >
+          </amp-img>
+        </div>
+      </amp-carousel>
+      <h3 class="section_intro">A Slide Carousel</h3>
+      <amp-carousel
+        type="slides"
+        layout="fixed-height"
+        height="350"
+      >
+        <figure>
+          <div class="fixed_cnt">
+            <figure>
+              <amp-img
+                src="https://images.unsplash.com/photo-1466690672306-5f92132f7248?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                layout="fill"
+              >
+              </amp-img>
+            </figure>
+          </div>
+        </figure>
+        <amp-img
+          src="https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
+          width="200"
+          height="350"
+          layout="responsive"
+        >
+        </amp-img>
+        <amp-img
+          src="https://images.unsplash.com/photo-1461958508236-9a742665a0d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          width="300"
+          height="350"
+          layout="responsive"
+        >
+        </amp-img>
+        <amp-img
+          src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+          width="600"
+          height="600"
+          layout="responsive"
+        >
+        </amp-img>
+      </amp-carousel>
+    </section>
+  </body>
+</html>
